@@ -52,6 +52,7 @@ h2{
 /*Рамки изображений*/
 img.pic{
   border: 1px solid #CFCFCF;
+  border-radius: 5px;
 }
 /*Поля для ввода текста*/
 input[type="text"]{
