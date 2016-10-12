@@ -1,0 +1,74 @@
+/*Для всего документа*/
+body{
+  background: #f8f8f8;
+  font-family: "Times New Roman", serif;
+}
+/*Убираем маркеры в меню*/
+.menu {
+  list-style-type: none;
+}
+/*Ссылки меню*/
+.menu a, p>a{
+  color: #607B8B;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+p>a{
+  font-size: 14px;
+}
+/*Заголовки*/
+h2{
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #eaeaea;
+}
+/*Описание товара*/
+.description{
+  color: #707070;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 16px;
+}
+/*Подробное описание товара*/
+.detailed{
+  list-style-type: circle;
+  color: #484343;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+/*Характеристики товара*/
+.character{
+  color: #101010;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 20px;
+  list-style-image: url(../picture/mark.png);
+}
+/*Рамки изображений*/
+img.pic{
+  border: 1px solid #CFCFCF;
+}
+/*Поля для ввода текста*/
+input[type="text"]{
+  width: 250px;
+  height: 20px;
+}
+
+textarea{
+  width: 300px;
+  height: 150px;
+  color: #666699;
+  font-size: 14px;
+  font-style: italic;
+}
+
+input[placeholder]{
+  color: #666699;
+  font-size: 14px;
+  font-style: italic;
+}
