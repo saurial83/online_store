@@ -34,7 +34,7 @@ h2{
 }
 /*Подробное описание товара*/
 .detailed{
-  list-style-type: circle;
+  list-style-image: url(../picture/iconplus.png);
   color: #484343;
   font-size: 16px;
   font-weight: 400;
@@ -72,4 +72,14 @@ input[placeholder]{
   color: #666699;
   font-size: 14px;
   font-style: italic;
+}
+/*Название сайта и заголовки*/
+h1, .name{
+  font-size: 38px;
+  color: #4682B4;
+  font-style: oblique;
+}
+
+h1{
+  font-size: 32px;
 }
