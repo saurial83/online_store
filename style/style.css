@@ -83,3 +83,9 @@ h1, .name{
 h1{
   font-size: 32px;
 }
+/*Copyright*/
+.copy{
+  font-size: 14px;
+  color: #607B8B;
+  font-style: italic;
+}
