@@ -65,7 +65,7 @@ p>a{
   list-style-image: url(../picture/mark.png);
 }
 /*Рамки изображений*/
-img.pic{
+img.pic{S
   border: 1px solid #4682B4;
   border-radius: 5px;
 }
@@ -73,26 +73,32 @@ img.pic{
 input[type="text"]{
   width: 250px;
   height: 20px;
+  color: #666699;
+  font-size: 14px;
+  font-style: italic;
 }
-
-textarea{
+.question{
   width: 300px;
   height: 150px;
   color: #666699;
   font-size: 14px;
   font-style: italic;
 }
-
-input[placeholder]{
-  color: #666699;
-  font-size: 14px;
-  font-style: italic;
+.mail:focus{
+  background-color: #E6E6FA;
+  color: #1E90FF;
+}
+.mail, .youname, .theme, .question, :first-letter{
+  text-transform: capitalize;
 }
 /*Название сайта и заголовки*/
-.name{
+.name, .prod_name{
   font-size: 40px;
   color: #4682B4;
   font-style: oblique;
+}
+.prod_name{
+  font-size: 22px;
 }
 .contacts, .catalog{
   font-size: 32px;
