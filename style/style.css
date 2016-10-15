@@ -22,12 +22,15 @@ body{
   font-weight: bold;
   font-style: italic;
 }
+.menu li a:hover{
+  color: #0000FF;
+}
 
 p>a{
   font-size: 14px;
 }
 /*Заголовки*/
-h2{
+.hea_2{
   color: black;
   font-size: 18px;
   font-weight: 400;
@@ -82,14 +85,15 @@ input[placeholder]{
   font-style: italic;
 }
 /*Название сайта и заголовки*/
-h1, .name{
-  font-size: 38px;
+.name{
+  font-size: 40px;
   color: #4682B4;
   font-style: oblique;
 }
-
-h1{
+.contacts, .catalog{
   font-size: 32px;
+  color: #4682B4;
+  font-style: oblique;
 }
 /*Copyright*/
 .copy{
