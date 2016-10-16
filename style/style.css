@@ -65,7 +65,7 @@ p>a{
   list-style-image: url(../picture/mark.png);
 }
 /*Рамки изображений*/
-img.pic{S
+img.pic{
   border: 1px solid #4682B4;
   border-radius: 5px;
 }
@@ -76,6 +76,14 @@ input[type="text"]{
   color: #666699;
   font-size: 14px;
   font-style: italic;
+  text-transform: capitalize;
+}
+input[type="email"]{
+width: 250px;
+height: 20px;
+color: #666699;
+font-size: 14px;
+font-style: italic;
 }
 .question{
   width: 300px;
@@ -83,14 +91,13 @@ input[type="text"]{
   color: #666699;
   font-size: 14px;
   font-style: italic;
+  text-transform: capitalize;
 }
-.mail:focus{
+input[type="email"]:focus{
   background-color: #E6E6FA;
   color: #1E90FF;
 }
-.mail, .youname, .theme, .question, :first-letter{
-  text-transform: capitalize;
-}
+
 /*Название сайта и заголовки*/
 .name, .prod_name{
   font-size: 40px;
