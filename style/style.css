@@ -198,7 +198,7 @@ table.det_specification{
 /*Каталог*/
 .dell, .lenovo, .hp, .fujitsu, .panasonic{
   padding: 5px;
-  margin: 0px 5px 0px 5px;
+  margin: 5px 5px 5px 5px;
   width: 200px;
   height: 180px;
   text-align: center;
