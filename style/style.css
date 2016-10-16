@@ -2,22 +2,35 @@
 body{
   background-color: #f8f8f8;
   font-family: "Times New Roman", serif;
+  margin-left: 20px;
 }
+
 /*Убираем маркеры в меню*/
 .menu {
   display: inline-block;;
   list-style-type: none;
 }
+
 .menu li{
   display: inline-block;
   padding-left: 15px;
   margin-right: 15px;
   border-left: 2px solid #607B8B;
 }
+
 .menu li:last-child{
   border-right: 2px solid #607B8B;
   padding-right: 15px;
 }
+
+/*Текст главной страницы*/
+.home p{
+  font-size: 18px;
+  font-family: sans-serif;
+  font-style: oblique;;
+  color:#607B8B;
+}
+
 /*Ссылки меню*/
 .menu a, p>a{
   color: #607B8B;
@@ -26,13 +39,15 @@ body{
   font-weight: bold;
   font-style: italic;
 }
+
 .menu li a:hover{
   color: #0000FF;
 }
 
-p>a{
+.catalog-prod p>a{
   font-size: 14px;
 }
+
 /*Заголовки*/
 .hea_2{
   color: black;
@@ -40,13 +55,22 @@ p>a{
   font-weight: 400;
   background-color: #eaeaea;
 }
+
 /*Описание товара*/
-.description{
+.description p{
   color: #707070;
   font-size: 14px;
   font-style: italic;
   line-height: 16px;
 }
+
+.description p:first-letter{
+  font-size: 26px;
+  font-family: Arial;
+  font-style: italic;
+  color: #4169E0;
+}
+
 /*Подробное описание товара*/
 .detailed{
   list-style-image: url(../picture/iconplus.png);
@@ -56,6 +80,7 @@ p>a{
   line-height: 24px;
   text-align: left;
 }
+
 /*Характеристики товара*/
 .character{
   color: #101010;
@@ -64,11 +89,17 @@ p>a{
   line-height: 20px;
   list-style-image: url(../picture/mark.png);
 }
+
 /*Рамки изображений*/
 img.pic{
   border: 1px solid #4682B4;
   border-radius: 5px;
 }
+
+img.pic:hover{
+  border: 1px solid #f8f8f8;
+}
+
 /*Поля для ввода текста*/
 input[type="text"]{
   width: 250px;
@@ -78,13 +109,15 @@ input[type="text"]{
   font-style: italic;
   text-transform: capitalize;
 }
+
 input[type="email"]{
-width: 250px;
-height: 20px;
-color: #666699;
-font-size: 14px;
-font-style: italic;
+  width: 250px;
+  height: 20px;
+  color: #666699;
+  font-size: 14px;
+  font-style: italic;
 }
+
 .question{
   width: 300px;
   height: 150px;
@@ -93,6 +126,7 @@ font-style: italic;
   font-style: italic;
   text-transform: capitalize;
 }
+
 input[type="email"]:focus{
   background-color: #E6E6FA;
   color: #1E90FF;
@@ -104,17 +138,61 @@ input[type="email"]:focus{
   color: #4682B4;
   font-style: oblique;
 }
+
 .prod_name{
   font-size: 22px;
 }
+
 .contacts, .catalog{
   font-size: 32px;
   color: #4682B4;
   font-style: oblique;
 }
+
 /*Copyright*/
 .copy{
   font-size: 14px;
   color: #607B8B;
   font-style: italic;
+}
+
+/*Таблица каталога товаров*/
+.catalog-prod{
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+/*Подробные характеристики товара*/
+table.det_specification{
+  border-collapse: collapse;
+  margin-left: 20px;
+}
+
+.det_specification td{
+  color: #101010;
+  font-size: 16px;
+  padding: 5px;
+  font-style: italic;:
+  text-align: left;
+}
+
+.name_spec>td{
+  color: #101010;
+  font-size: 20px;
+  font-style: normal;:
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.det_specification tr:not(.name_spec){
+  background-color: #FFFFF0;
+}
+
+.det_specification tr td:nth-child(1){
+  padding-right: 30px;
+}
+
+.name_spec tr:nth-child(odd){
+  background-color: red;
 }
