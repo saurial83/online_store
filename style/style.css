@@ -45,7 +45,7 @@ header{
 }
 
 .menu li a:hover{
-  color: #0000FF;
+  color: #0000CD;
 }
 
 .catalog div p>a{
@@ -114,7 +114,7 @@ input[type="text"]{
   text-transform: capitalize;
 }
 
-input[type="email"]{
+input[type="email"], input[type="phone"]{
   width: 250px;
   height: 20px;
   color: #666699;
@@ -133,8 +133,8 @@ input[type="email"]{
 }
 
 input[type="email"]:focus{
-  background-color: #E6E6FA;
-  color: #1E90FF;
+  background-color: #FFFFF0;
+  color: #0000CD;
 }
 
 /*Название сайта и заголовки*/
@@ -150,8 +150,9 @@ input[type="email"]:focus{
 
 .contacts, .catalog{
   font-size: 32px;
+  font-family: Arial;
   color: #4682B4;
-  font-style: oblique;
+  font-style: italic;;
 }
 
 /*Copyright*/
@@ -204,7 +205,7 @@ table.det_specification{
   text-align: center;
   vertical-align: middle;
   border-radius: 10px;
-  background-color: #6495ED;
+  background-color: #4682B4;
   float: left;
 }
 
@@ -225,7 +226,8 @@ table.det_specification{
 }
 
 /*Ссылки на товары*/
-.references p>a{color: #607B8B;
+.references p>a{
+  color: #607B8B;
   text-decoration: none;
   font-weight: bold;
   font-style: italic;
