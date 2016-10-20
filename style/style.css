@@ -2,19 +2,20 @@
 body{
   background-color: #f8f8f8;
   font-family: "Times New Roman", serif;
-  margin: 0px;
+  margin: 0px auto;
+  overflow: scroll;
 }
 /*Основной контейнер*/
 .container{
   width: 800px;
   margin: 0px auto;
-  background-color: #F0FFFF;
+  background-color: #E0FFFF;
 }
 
 /*Шапка*/
 .header{
   height: 300px;
-  background-color: #E0FFFF;
+  background-color: #ADD8E6;
 }
 
 /*Контент*/
@@ -33,7 +34,7 @@ body{
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .menu ul li{
@@ -53,7 +54,7 @@ body{
 
 /*Ссылки меню*/
 .menu a{
-  color: #607B8B;
+  color: #000000;
   font-size: 18px;
   text-decoration: none;
   font-weight: bold;
@@ -61,7 +62,7 @@ body{
 }
 
 .menu li a:hover{
-  color: #0000CD;
+  color: #f8f8f8;
 }
 
 .catalog div p>a{
@@ -79,7 +80,7 @@ body{
 /*Описание товара*/
 .descript_2{
   color: #707070;
-  font-size: 14px;
+  font-size: 16px;
   font-style: italic;
   line-height: 16px;
 }
@@ -115,7 +116,7 @@ body{
 
 /*Рамки изображений*/
 img.pic{
-  float: left;;
+  float: left;
   border: 1px solid #4682B4;
   border-radius: 5px;
   margin: 0px 10px 10px 0px;
@@ -158,6 +159,10 @@ input[type="email"]:focus{
   color: #0000CD;
 }
 
+input[type="text"], input[type="email"], input[type="phone"],
+.question, input[type="email"]:focus{
+  outline: none;
+}
 /*Название сайта и заголовки*/
 .name, .prod_name{
   font-size: 40px;
@@ -170,16 +175,19 @@ input[type="email"]:focus{
 }
 
 .contacts, .catalog{
-  font-size: 32px;
-  font-family: Arial;
-  color: #4682B4;
+  font-size: 24px;
   font-style: italic;;
+  padding-left: 30px;
+  margin: 0px;
 }
 
+.contacts{
+  margin-bottom: 10px;
+}
 /*Подвал*/
 .footer{
  height: 150px;
- background-color: #E0FFFF;
+ background-color: #ADD8E6;
 }
 
 .copy{
@@ -201,14 +209,14 @@ table.det_specification{
   color: #101010;
   font-size: 16px;
   padding: 5px;
-  font-style: italic;:
+  font-style: italic;
   text-align: left;
 }
 
 .name_spec>td{
   color: #101010;
   font-size: 20px;
-  font-style: normal;:
+  font-style: normal;
   text-align: left;
   padding-bottom: 10px;
 }
@@ -228,18 +236,28 @@ table.det_specification{
 /*Каталог*/
 .dell, .lenovo, .hp, .fujitsu, .panasonic{
   padding: 5px;
-  margin: 5px 5px 5px 5px;
+  margin: 5px;
   width: 200px;
   height: 180px;
   text-align: center;
   vertical-align: middle;
   border-radius: 10px;
-  background-color: #4682B4;
-  float: left;
+  background-color: #ADD8E6;
 }
 
+.overal_catalog{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.main_catalog{
+  background-color: #DCDCDC;
+  margin: -25px 5% 0px 35%;
+  padding-top: 10px;
+}
 .clear{
-  clear: both;;
+  clear: both;
 }
 
 .name_dell a, .name_lenovo a, .name_hp a, .name_fujitsu a, .name_panasonic a{
@@ -262,4 +280,25 @@ table.det_specification{
   font-style: italic;
   font-size: 14px;
   padding: 5px;
+}
+
+/*Кнопка "Купить*/
+.buy{
+  float: left;
+  width: 80px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  color: #607B8B;
+  margin: 0px 0px 10px 90px;
+  background-color: #FFFFF0;
+}
+
+.buy:hover{
+  color: #000000;
+  background-color: #ADD8E6;
+}
+.buy, .buy:hover{
+  outline: none;
 }
