@@ -6,28 +6,34 @@
   <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
-  <header>
-    <img src="picture/logo.png" alt="logo" />
-    <ul class="menu">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
-    </ul>
-  </header>
-  <hr/>
-  <h1 class="contacts">Напишите нам</h1>
-    <form action="">
-      <fieldset>
-        <legend>Обратная связь</legend>
-        <p><label>Имя:&nbsp&nbsp&nbsp&nbsp<input type="text" size="20" placeholder="Ваше имя"></label></p>
-        <p><label>Почта:&nbsp<input type="email" name="email" size="20" placeholder="Ваш e-mail"></label></p>
-        <p><label>Тел:&nbsp&nbsp&nbsp&nbsp&nbsp<input type="phone" name="phone" placeholder="8-888-888-88-88"></label></p>
-        <p><label>Тема:&nbsp&nbsp&nbsp<input type="text" size="20" placeholder="Тема"></label></p>
-        <p><label>Текст письма:<br/><textarea class="question"></textarea></label></p>
-        <p><input type="submit" value="Отправить"></p>
-        <p><i>Спасибо! Наш оператор свяжется с Вами</i></p>
-      </fieldset>
-    </form>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <img src="picture/logo.png" alt="logo">
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr/>
+  <div class="content">
+    <h1 class="contacts">Напишите нам</h1>
+      <form action="">
+        <fieldset>
+          <legend>Обратная связь</legend>
+          <p><label>Имя:&nbsp&nbsp&nbsp&nbsp<input type="text" size="20" placeholder="Ваше имя"></label></p>
+          <p><label>Почта:&nbsp<input type="email" name="email" size="20" placeholder="Ваш e-mail"></label></p>
+          <p><label>Тел:&nbsp&nbsp&nbsp&nbsp&nbsp<input type="phone" name="phone" placeholder="8-888-888-88-88"></label></p>
+          <p><label>Тема:&nbsp&nbsp&nbsp<input type="text" size="20" placeholder="Тема"></label></p>
+          <p><label>Текст письма:<br/><textarea class="question"></textarea></label></p>
+          <p><input type="submit" value="Отправить"></p>
+          <p><i>Спасибо! Наш оператор свяжется с Вами</i></p>
+        </fieldset>
+      </form>
     <h2>Адрес</h2>
     <p><i>398059 г. Липецк, ул Октябрьская, д.3 (вход со двора)<i></p>
     <p><b>тел:</b> +7(4742) 20-50-40</p>
@@ -37,9 +43,11 @@
     <p><i>Наш магазин на карте:</i></p>
     <p><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=iI_9Sj1--S4BMRc8rdqQ1cz1VhnjLoLW&amp;width=324&amp;height=240&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script></p>
     <!--Ссылка на яндекс карты (интерактивные) -->
-  <hr/>
-    <footer>
+    <hr/>
+  </div>  
+    <div class="footer">
       <p class="copy">Copyright &copy; Все права защищены. 2016</p>
-    </footer>
+    </div>
+  </div>
 </body>
 </html>

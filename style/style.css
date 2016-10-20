@@ -2,29 +2,45 @@
 body{
   background-color: #f8f8f8;
   font-family: "Times New Roman", serif;
-  margin-left: 20px;
+  margin: 0px;
+}
+/*Основной контейнер*/
+.container{
+  width: 800px;
+  margin: 0px auto;
+  background-color: #F0FFFF;
 }
 
-header{
-  border-radius: 20px;
-  background-color: #FFFFF0;
+/*Шапка*/
+.header{
+  height: 300px;
+  background-color: #E0FFFF;
 }
-/*Убираем маркеры в меню*/
+
+/*Контент*/
+.content{
+  padding: 10px;
+}
+/*Логотип*/
+.logo{
+  float: left;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+/*Меню*/
 .menu {
-  display: inline-block;;
+  display: flex;
   list-style-type: none;
+  justify-content: flex-end;
+  padding-top: 50px;
 }
 
-.menu li{
+.menu ul li{
   display: inline-block;
   padding-left: 15px;
   margin-right: 15px;
-  border-left: 2px solid #607B8B;
-}
-
-.menu li:last-child{
-  border-right: 2px solid #607B8B;
-  padding-right: 15px;
+  align-items: center;
 }
 
 /*Текст главной страницы*/
@@ -61,18 +77,21 @@ header{
 }
 
 /*Описание товара*/
-.description p{
+.descript_2{
   color: #707070;
   font-size: 14px;
   font-style: italic;
   line-height: 16px;
 }
 
-.description p:first-letter{
+.descript_2:first-letter{
   font-size: 26px;
   font-family: Arial;
   font-style: italic;
   color: #4169E0;
+}
+.description > .hea_2{
+ display: flex;
 }
 
 /*Подробное описание товара*/
@@ -96,12 +115,14 @@ header{
 
 /*Рамки изображений*/
 img.pic{
+  float: left;;
   border: 1px solid #4682B4;
   border-radius: 5px;
+  margin: 0px 10px 10px 0px;
 }
 
 img.pic:hover{
-  border: 1px solid #f8f8f8;
+  border: 1px solid #F0FFFF;
 }
 
 /*Поля для ввода текста*/
@@ -133,7 +154,7 @@ input[type="email"], input[type="phone"]{
 }
 
 input[type="email"]:focus{
-  background-color: #FFFFF0;
+  background-color: #FFDEAD;
   color: #0000CD;
 }
 
@@ -155,11 +176,19 @@ input[type="email"]:focus{
   font-style: italic;;
 }
 
-/*Copyright*/
+/*Подвал*/
+.footer{
+ height: 150px;
+ background-color: #E0FFFF;
+}
+
 .copy{
+  float: right;
   font-size: 14px;
   color: #607B8B;
   font-style: italic;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 
 /*Подробные характеристики товара*/
@@ -210,7 +239,7 @@ table.det_specification{
 }
 
 .clear{
-  clear: left;
+  clear: both;;
 }
 
 .name_dell a, .name_lenovo a, .name_hp a, .name_fujitsu a, .name_panasonic a{
