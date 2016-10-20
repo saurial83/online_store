@@ -7,7 +7,7 @@ body{
 }
 /*Основной контейнер*/
 .container{
-  width: 800px;
+  width: 1024px;
   margin: 0px auto;
   background-color: #E0FFFF;
 }
