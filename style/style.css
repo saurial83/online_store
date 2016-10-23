@@ -235,6 +235,7 @@ table.det_specification{
 
 /*Каталог*/
 .dell, .lenovo, .hp, .fujitsu, .panasonic{
+  display: inline-block;
   padding: 5px;
   margin: 5px;
   width: 200px;
@@ -244,16 +245,16 @@ table.det_specification{
   border-radius: 10px;
   background-color: #ADD8E6;
 }
-
+/*
 .overal_catalog{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-}
+}*/
 .main_catalog{
   background-color: #DCDCDC;
-  margin: -25px 5% 0px 35%;
+  margin: -25px 5% 0px 50%;
   padding-top: 10px;
 }
 .clear{
@@ -295,10 +296,10 @@ table.det_specification{
   background-color: #FFFFF0;
 }
 
-.buy:hover{
+.buy:hover, .buy:active{
   color: #000000;
   background-color: #ADD8E6;
 }
-.buy, .buy:hover{
+.buy, .buy:hover,. .buy:active{
   outline: none;
 }
